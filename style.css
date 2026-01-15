@@ -1,0 +1,98 @@
+:root {
+    --bg-color: #0a0a0c;
+    --accent: #6366f1;
+    --text-main: #ffffff;
+    --glass: rgba(255, 255, 255, 0.05);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* Creative Background */
+.background-blobs {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: -1;
+    background: radial-gradient(circle at 20% 30%, #4338ca 0%, transparent 20%),
+                radial-gradient(circle at 80% 70%, #1e1b4b 0%, transparent 20%);
+    filter: blur(80px);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10%;
+    align-items: center;
+}
+
+.logo { font-size: 1.5rem; font-weight: 800; letter-spacing: -1px; }
+.logo span { color: var(--accent); }
+
+.hero {
+    text-align: center;
+    padding: 5rem 10%;
+}
+
+h1 { font-size: 4rem; margin-bottom: 0.5rem; }
+.subtitle { opacity: 0.7; font-size: 1.2rem; }
+
+.badge {
+    display: inline-block;
+    background: var(--glass);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* Terminal Styles */
+.terminal-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.terminal-header {
+    background: rgba(255,255,255,0.05);
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dot { width: 12px; height: 12px; border-radius: 50%; }
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+.terminal-header p { font-size: 0.8rem; margin-left: 10px; opacity: 0.5; }
+
+.terminal-body {
+    padding: 20px;
+    height: 300px;
+    overflow-y: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.prompt { color: var(--accent); margin-right: 10px; }
+
+#command-input {
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    width: 70%;
+    font-size: 1rem;
+}

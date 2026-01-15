@@ -4,8 +4,8 @@ const terminalBody = document.getElementById('terminal-body');
 const commands = {
     'help': 'Available commands: about, projects, clear, contact',
     'about': 'Jorge Palacios: A developer focused on clean code and modern UI.',
-    'projects': 'Check out my GitHub at github.com/jorgepalacios',
-    'contact': 'Email: jorge@devjapc.com'
+    'projects': 'Check out my GitHub at github.com/jorgepalaciios',
+    'contact': 'Email: devjapc@gmail.com'
 };
 
 input.addEventListener('keydown', (e) => {
